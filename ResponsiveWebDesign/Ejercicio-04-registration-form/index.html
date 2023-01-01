@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilla de Registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>Planilla de Registro</h1>
+    <p>Por favor llena esta forma con la información requerida</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for="">Introduzca Su Primer Nombre: <input type="text" name="first-name" required></label>
+            <label for="">Introduzca Su Primer Apellido: <input type="text" name="last-name" required></label>
+            <label for="">Introduzca Su Email: <input type="email" name="email" required></label>
+            <label for="">Cree una Nueva Contraseña: <input type="password" name="pattern="[a-z0-5]{8,}"" required pattern="[a-z0-5]{8,}"></label>
+        </fieldset>
+        <fieldset>
+            <label for=""><input type="radio" name="account-type" class="inline"> Cuenta Personal</label>
+            <label for=""><input type="radio" name="account-type" class="inline"> Cuenta de Negocios</label>
+            <label for=""><input type="checkbox" name="term" class="inline" required> Acepto los <a href="https://freecodecamp.org/news/terms-of-service" />terminos y condiciones </a></label>
+        </fieldset>
+        <fieldset>
+            <label for="">Subir una foto de perfil: <input type="file" name="profile-photo"></label>
+            <label for="">Ingresa tu edad (años): <input type="number" name="age" min="13" max="120"></label>
+            <label for="">¿Cómo te enteraste de nosotros?
+                <select name="refferer" id="">
+                    <option value="">(seleccione uno)</option>
+                    <option value="1">Noticias</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Foros</option>
+                    <option value="4">Otros</option>
+                </select>
+            </label>
+            <label for="">Proporciona una bio: 
+                <textarea name="bio" id="" cols="30" rows="3" placeholder="Me gusta programar en la playa..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="enviar">
+    </form>
+    <footer>
+        <p>by <a href="https://github.com/yalfmm" target="_blank">yalfmm</a></p>
+    </footer>
+</body>
+</html>
