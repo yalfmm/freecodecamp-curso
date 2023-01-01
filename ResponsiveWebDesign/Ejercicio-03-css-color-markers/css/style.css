@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+    
+.marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+}
+    
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    /*opacity: 0.5;*/
+    background-color: rgba(255, 255, 255, 50%);
+    /*border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black;*/
+    border-left: 10px /*solid*/ double /*black*/ rgba(0, 0, 0, 75%);
+}
+    
+.sleeve, .cap {
+    display: inline-block;
+} 
+
+.red {
+    /*background-color: rgb(255, 0, 0);*/
+    background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%); /*funcion gradiente linear-gradient:(gradientDirection, color 0%, color2 100%, ...)*/
+    /*box-shadow: offsetX offset Y blurRadius color; formato de sombra*/
+    box-shadow: 0px 0px 20px 0px rgba(83, 14, 14, 0.8);
+}
+    
+.green {
+    /*background-color: #00FF00;*/
+    background: linear-gradient(180deg, #55680D, #71F53E, #116C31);
+    box-shadow: 0px 0px 20px 0px #3B7E20CC;
+}
+    
+.blue {
+    /*background-color: hsl(240, 100%, 50%);*/
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /*box-shadow: offsetX offsetY blurRadius spreadRadius color; formato de sombra*/
+    box-shadow: 0px 0px 20px 0px hsla(223, 59%, 31%, 0.8);
+}
